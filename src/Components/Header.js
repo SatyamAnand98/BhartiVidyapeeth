@@ -1,5 +1,5 @@
 
-import { Navbar, Nav, Form, FormControl, Button, NavDropdown, InputGroup } from 'react-bootstrap'
+import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from 'react-bootstrap'
 import React, { Component } from 'react'
 
 export default class Header extends Component {
@@ -16,7 +16,7 @@ export default class Header extends Component {
                                 loading="lazy"
                             />
                         </a>
-                        <Navbar.Brand href="/home">Bharti Vidyapeeth</Navbar.Brand>
+                        <Navbar.Brand href="/home"><b>Bharti Vidyapeeth</b></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
