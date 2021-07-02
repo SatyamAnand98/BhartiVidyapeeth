@@ -98,3 +98,17 @@ color: rgb(102, 101, 101);
   color: inherit;
   border-radius: 5px;
 }
+
+
+.aboutHeading{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  margin-left: 46%;
+  margin-right:46%;
+  padding: 5px 8px;
+}
+
+.DecriptionHeading{
+  font-size: 23px;
+}

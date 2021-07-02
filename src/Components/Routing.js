@@ -3,6 +3,7 @@ import PageNotFound from './pageNotFound/pageNotFound';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home/Home';
+import AboutUs from './AboutUs/AboutUs';
 
 function Routing() {
     return(
@@ -14,6 +15,7 @@ function Routing() {
                     <Switch>
                         <Route path="/login" component={PageNotFound} />
                         <Route path="/home" component={Home} />
+                        <Route path="/contact" component={AboutUs} />
                     </Switch>
                     <br></br>
                     <Footer />
