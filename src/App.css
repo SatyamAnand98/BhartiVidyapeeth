@@ -38,8 +38,8 @@
 }
 
 .header{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin:0 auto;
+  padding: 0px 10px;
 }
 
 #basic-nav-dropdown{
@@ -60,43 +60,53 @@ color: rgb(102, 101, 101);
 }
 
 .leftCenter{
-  position: absolute;
-  top: 44%;
-  margin-left: 36%;
+  position: relative;
+  margin-right: 45%;
+  margin-top: 17%;
+  text-align: left;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 5px;
   padding: 7px;
   font-size:20px;
-  transform: translate(-50%, -50%);
+  transform: translate(-5%, -30%);
   background-color:black;
   color: white;
 }
 
 .leftCenter2{
-  position: absolute;
-  top:52%;
-  left: 32%;
+  position: relative;
+  margin-right: 55%;
+  margin-top: 15px;
+  text-align: left;
   font-family: "Times New Roman";
   letter-spacing: 6px;
-  padding: 8px;
+  padding: 3px;
   font-size:60px;
-  transform: translate(-50%, -50%);
+  transform: translate(-5%, -28%);
   background-color:white;
   color: black;
 }
 
 .contactNo:hover, .contactNo{
-  position: absolute;
-  top: 64%;
-  left: 23%;
-  transform: translate(-50%, -50%);
-  padding: 15px 35px;
+  position: relative;
+  margin-right: 85%;
+  transform: translate(-28%, -30%);
+  padding: 10px 35px;
   font-size: 20px;
   font-family: sans-serif;
   background-color: rgb(212, 212, 195);
   text-decoration: none;
-  color: inherit;
-  border-radius: 5px;
+  /* color: inherit; */
+
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  border: none;
+  box-shadow: 0 5px #999;
+  /* border-radius: 5px; */
 }
 
 
@@ -111,4 +121,12 @@ color: rgb(102, 101, 101);
 
 .DecriptionHeading{
   font-size: 23px;
+}
+
+.home{
+  width:70%;
+  height: 854px;
+  background-image: url(../src/images/childImage.jpeg);
+  background-repeat: no-repeat;
+  margin:0 auto;
 }

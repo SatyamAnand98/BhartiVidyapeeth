@@ -7,7 +7,7 @@ export default function Footer() {
                 <p>
                     Copyright © 2021 Bharti Vidyapeeth - All Rights Reserved.
                 </p>
-                <p inline>
+                <p>
                     Powered by Satyam Anand
                 </p>
             </div>
