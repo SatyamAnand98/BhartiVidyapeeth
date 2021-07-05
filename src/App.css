@@ -62,13 +62,15 @@ color: rgb(102, 101, 101);
 
 .leftCenter2{
   position: relative;
-  margin-right: 45%;
+  margin-right: 65%;
   text-align: left;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 5px;
   font-size:20px;
   word-wrap: break-word;
-  transform: translate(17%, -500%);
+  transform: translate(40%, -800%);
+  margin-top: -10%;
+  /* margin-bottom:20px; */
   background-color:black;
   color: white;
 }
@@ -76,13 +78,13 @@ color: rgb(102, 101, 101);
 .leftCenter{
   position: relative;
   margin-right: 55%;
-  margin-top: 4px;
+  /* margin-top: 4px; */
   text-align: left;
   font-family: "Times New Roman";
   letter-spacing: 6px;
   padding: 3px 4px;
   font-size:60px;
-  transform: translate(20%, -230%);
+  transform: translate(31%, -370%);
   background-color:white;
   color: black;
 }
@@ -105,18 +107,22 @@ color: rgb(102, 101, 101);
 .contactNo:hover, .contactNo{
   position: relative;
   margin-right: 43%;
-  margin-top: 10px;
-  transform: translate(-92%, -450%);
+  /* margin-top: 10px; */
+  transform: translate(-115%, -650%);
   padding: 10px 35px;
   font-size: 20px;
   font-family: sans-serif;
   background-color: rgb(212, 212, 195);
-  text-decoration: none;
+  /* text-decoration: none; */
   color: #000;
   border: none;
   box-shadow: 0 5px #999;
 }
 
+.aboutus{
+  overflow: hidden;
+  position: relative;
+}
 
 .aboutHeading{
   display: table;
@@ -139,7 +145,7 @@ color: rgb(102, 101, 101);
   font-size: 18px;
   font-weight: 500;
   border: none;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-shadow: 0 1px rgb(190, 190, 190);
@@ -151,8 +157,9 @@ color: rgb(102, 101, 101);
   position: relative;
   align-items: center;
   width: 100%;
-  height: 720px;
-  margin:0 auto;
+  /* height: 720px; */
+  /* margin:0 auto; */
+  /* overflow: hidden; */
   /* background-color: blue; */
   /* background-image: url(../src/images/school1.jpg); */
   /* background-position: center; */
