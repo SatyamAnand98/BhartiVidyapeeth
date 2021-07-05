@@ -43,9 +43,18 @@
 }
 
 #basic-nav-dropdown{
-color: rgb(102, 101, 101);
+  position: relative;
+  color: rgb(102, 101, 101);
 /* margin-left: 10px; */
 /* margin-right: 10px; */
+  padding: 5px; 
+}
+
+.dropdown-left-manual {
+  right: 0;
+  left: auto;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 .highlight:hover{
@@ -113,7 +122,7 @@ color: rgb(102, 101, 101);
   font-size: 20px;
   font-family: sans-serif;
   background-color: rgb(212, 212, 195);
-  /* text-decoration: none; */
+  text-decoration: none;
   color: #000;
   border: none;
   box-shadow: 0 5px #999;
