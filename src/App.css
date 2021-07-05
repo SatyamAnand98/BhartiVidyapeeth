@@ -56,41 +56,44 @@ color: rgb(102, 101, 101);
 }
 
 .footer{
-  background-color:rgb(224, 224, 224);
-}
-
-.leftCenter{
   position: relative;
-  margin-right: 45%;
-  margin-top: 17%;
-  text-align: left;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 5px;
-  padding: 7px;
-  font-size:20px;
-  transform: translate(-5%, -30%);
-  background-color:black;
-  color: white;
+  background-color:rgb(224, 224, 224);
 }
 
 .leftCenter2{
   position: relative;
+  margin-right: 45%;
+  /* margin-top: 10px; */
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 5px;
+  /* padding: 3px 4px; */
+  font-size:20px;
+  word-wrap: break-word;
+  transform: translate(25%, -500%);
+  background-color:black;
+  color: white;
+}
+
+.leftCenter{
+  position: relative;
   margin-right: 55%;
-  margin-top: 15px;
+  margin-top: 4px;
   text-align: left;
   font-family: "Times New Roman";
   letter-spacing: 6px;
-  padding: 3px;
+  padding: 3px 4px;
   font-size:60px;
-  transform: translate(-5%, -28%);
+  transform: translate(33%, -230%);
   background-color:white;
   color: black;
 }
 
-.contactNo:hover, .contactNo{
+.contactNo{
   position: relative;
-  margin-right: 85%;
-  transform: translate(-28%, -30%);
+  margin-right: 43%;
+  margin-top: 10px;
+  transform: translate(-60%, -450%);
   padding: 10px 35px;
   font-size: 20px;
   font-family: sans-serif;
@@ -98,25 +101,34 @@ color: rgb(102, 101, 101);
   text-decoration: none;
   /* color: inherit; */
 
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
+  /* display: inline-block; */
+  /* cursor: pointer; */
+  /* word-wrap: break-word; */
+  /* text-align: center; */
+  /* text-decoration: none; */
+  /* outline: none; */
   color: #000;
   border: none;
   box-shadow: 0 5px #999;
   /* border-radius: 5px; */
 }
 
+.aboutus{
+  width: auto
+}
 
 .aboutHeading{
   background-color: black;
   color: white;
+  width: auto;
   font-family: sans-serif;
-  margin-left: 46%;
-  margin-right:46%;
-  padding: 5px 8px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid silver;
 }
 
 .DecriptionHeading{
@@ -124,9 +136,13 @@ color: rgb(102, 101, 101);
 }
 
 .home{
-  width:70%;
-  height: 854px;
-  background-image: url(../src/images/childImage.jpeg);
-  background-repeat: no-repeat;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 720px;
   margin:0 auto;
+  /* background-color: blue; */
+  /* background-image: url(../src/images/school1.jpg); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
 }

@@ -8,9 +8,9 @@ import AboutUs from './AboutUs/AboutUs';
 function Routing() {
     return(
         <div className="App">
+            <Header />
             <Router>
                 <div>
-                    <Header />
                     <br></br>
                     <Switch>
                         <Route path="/login" component={PageNotFound} />
@@ -18,9 +18,9 @@ function Routing() {
                         <Route path="/contact" component={AboutUs} />
                     </Switch>
                     <br></br>
-                    <Footer />
                 </div>
             </Router>
+            <Footer />
         </div>
     )    
 }
