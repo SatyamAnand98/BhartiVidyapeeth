@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AboutUs from './AboutUs/AboutUs';
+import AboutUs from '../AboutUs/AboutUs';
 
 export default class Home extends Component {
     render(){
@@ -13,7 +13,8 @@ export default class Home extends Component {
                             "background-color":"black", "color": "white", "font-family": ["Verdana", "Geneva", "Tahoma", "sans-serif"], "letter-spacing": "5px",  "padding": "7px",  "font-size":"20px"
                         }}>JOIN A COMMUNITY OF LIFELONG LEARNERS!</div>
                         <div className="leftCenter">STAY CURIOUS</div>
-                        <a href="tel:+918271555938"type="button" className="contactNo">Book Tour</a>
+                        <a href="/contact" type="button" className="contactNo">Contact Us</a>
+                        {/* <a href="tel:+918271555938" type="button" className="contactNo">Call Us</a> */}
                         {/* <button type="button" class="btn-lg contactNo" onClick={() => { "tel:+1-555-555-1212"}}>BOOK TOUR</button> */}
                     </div>
                     <br></br>

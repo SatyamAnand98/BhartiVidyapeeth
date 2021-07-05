@@ -68,7 +68,7 @@ color: rgb(102, 101, 101);
   letter-spacing: 5px;
   font-size:20px;
   word-wrap: break-word;
-  transform: translate(25%, -500%);
+  transform: translate(17%, -500%);
   background-color:black;
   color: white;
 }
@@ -82,7 +82,7 @@ color: rgb(102, 101, 101);
   letter-spacing: 6px;
   padding: 3px 4px;
   font-size:60px;
-  transform: translate(33%, -230%);
+  transform: translate(20%, -230%);
   background-color:white;
   color: black;
 }
@@ -90,11 +90,11 @@ color: rgb(102, 101, 101);
 
 
 
-.contactNo{
+.contactNo:hover, .contactNo{
   position: relative;
   margin-right: 43%;
   margin-top: 10px;
-  transform: translate(-60%, -450%);
+  transform: translate(-92%, -450%);
   padding: 10px 35px;
   font-size: 20px;
   font-family: sans-serif;
