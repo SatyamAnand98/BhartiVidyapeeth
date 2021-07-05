@@ -22,18 +22,20 @@ export default class Header extends Component {
                             <Nav className="mr-auto">
                                 <Nav.Link href="/home"><i className="fa fa-fw fa-home"></i>Home</Nav.Link>
                                 <Nav.Link href="/contact"><i className="fa fa-fw fa-envelope"></i>Contact</Nav.Link>
-                                <NavDropdown title="Dropdown" className="highlight" id="basic-nav-dropdown">
+                                <Nav.Link href="/about">About</Nav.Link>
+                                <Nav.Link href="/join">Join</Nav.Link>
+                                {/* <NavDropdown title="Dropdown" className="highlight" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                                </NavDropdown>
+                                </NavDropdown> */}
                             </Nav>
                         </Navbar.Collapse>
 
                         <Form className="d-flex">
-                            <NavDropdown style={{ color: "grey" }} title={
+                            {/* <NavDropdown style={{ color: "grey" }} title={
                                 <i style={{ color: "grey" }} className="fa fa-bell"><span className="badge rounded-pill badge-notification bg-danger">1</span></i>
                             } id="basic-nav-dropdown" className="highlight">
                                 <NavDropdown.Item href="#action/3.1">Notification 1</NavDropdown.Item>
@@ -41,10 +43,10 @@ export default class Header extends Component {
                                 <NavDropdown.Item href="#action/3.3">Notification 3</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Notification 4</NavDropdown.Item>
-                            </NavDropdown>
+                            </NavDropdown> */}
 
 
-                            <NavDropdown title={
+                            <NavDropdown style={{"marginRight":"80px"}} title={
                                 <img
                                     src="https://mdbootstrap.com/img/new/avatars/2.jpg"
                                     className="rounded-circle"
@@ -59,8 +61,8 @@ export default class Header extends Component {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown>
-                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                            <Button variant="outline-success"><i className="fa fa-fw fa-search"></i> </Button>
+                            {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                            <Button variant="outline-success"><i className="fa fa-fw fa-search"></i> </Button> */}
                         </Form>
                     </Navbar>
                 </div>

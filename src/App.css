@@ -88,6 +88,18 @@ color: rgb(102, 101, 101);
 }
 
 
+.ApplyNow{
+  position: relative;
+  padding: 10px 35px;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: rgb(212, 212, 195);
+  text-decoration: none;
+  color: #000;
+  border: none;
+  box-shadow: 0 5px #999;
+}
+
 
 
 .contactNo:hover, .contactNo{
