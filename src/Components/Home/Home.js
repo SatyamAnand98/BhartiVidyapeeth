@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AboutUs from '../AboutUs/AboutUs';
+import AboutUs from './AboutUs/AboutUs';
 
 export default class Home extends Component {
     render(){
@@ -17,7 +17,6 @@ export default class Home extends Component {
                         {/* <button type="button" class="btn-lg contactNo" onClick={() => { "tel:+1-555-555-1212"}}>BOOK TOUR</button> */}
                     </div>
                     <br></br>
-                    <AboutUs />
                 </section>
             </>
         )

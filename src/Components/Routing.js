@@ -3,7 +3,8 @@ import PageNotFound from './pageNotFound/pageNotFound';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home/Home';
-import AboutUs from './AboutUs/AboutUs';
+import HomeIndex from './Home';
+import AboutUs from './Home/AboutUs/AboutUs';
 
 function Routing() {
     return(
@@ -14,8 +15,10 @@ function Routing() {
                     <br></br>
                     <Switch>
                         <Route path="/login" component={PageNotFound} />
-                        <Route path="/home" component={Home} />
+                        <Route path="/home" component={HomeIndex} />
                         <Route path="/contact" component={AboutUs} />
+                        <Route path="/" exact={true} component={HomeIndex} />
+                        <Route path="*" exact={true} component={PageNotFound} />
                     </Switch>
                     <br></br>
                 </div>

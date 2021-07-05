@@ -63,11 +63,9 @@ color: rgb(102, 101, 101);
 .leftCenter2{
   position: relative;
   margin-right: 45%;
-  /* margin-top: 10px; */
   text-align: left;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 5px;
-  /* padding: 3px 4px; */
   font-size:20px;
   word-wrap: break-word;
   transform: translate(25%, -500%);
@@ -89,6 +87,9 @@ color: rgb(102, 101, 101);
   color: black;
 }
 
+
+
+
 .contactNo{
   position: relative;
   margin-right: 43%;
@@ -99,22 +100,9 @@ color: rgb(102, 101, 101);
   font-family: sans-serif;
   background-color: rgb(212, 212, 195);
   text-decoration: none;
-  /* color: inherit; */
-
-  /* display: inline-block; */
-  /* cursor: pointer; */
-  /* word-wrap: break-word; */
-  /* text-align: center; */
-  /* text-decoration: none; */
-  /* outline: none; */
   color: #000;
   border: none;
   box-shadow: 0 5px #999;
-  /* border-radius: 5px; */
-}
-
-.aboutus{
-  width: auto
 }
 
 
@@ -127,14 +115,25 @@ color: rgb(102, 101, 101);
   margin: 10px auto;
   justify-content: center;
   text-align: center;
-  border-radius: 10px;
+  letter-spacing: 4px;
+  /* border-radius: 10px; */
   padding: 5px;
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
 }
 
-.DecriptionHeading{
-  font-size: 23px;
+.DescriptionHeading{
+  margin: 10px auto;
+  display: table;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 0 1px rgb(190, 190, 190);
 }
+
+
 
 .home{
   position: relative;
@@ -146,4 +145,10 @@ color: rgb(102, 101, 101);
   /* background-image: url(../src/images/school1.jpg); */
   /* background-position: center; */
   /* background-repeat: no-repeat; */
+}
+
+.description{
+  margin: 40px 0px;
+  margin-left:80px;
+  margin-right:80px;
 }
