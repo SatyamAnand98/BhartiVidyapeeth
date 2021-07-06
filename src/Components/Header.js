@@ -46,7 +46,7 @@ export default class Header extends Component {
                             </NavDropdown> */}
 
 
-                            {/* <NavDropdown title={
+                            <NavDropdown title={
                                 <img
                                     src="https://mdbootstrap.com/img/new/avatars/2.jpg"
                                     className="rounded-circle"
@@ -54,8 +54,7 @@ export default class Header extends Component {
                                     alt=""
                                     loading="lazy"
                                 />
-                            } id="basic-nav-dropdown" class="dropdown-left-manual"> */}
-                            <NavDropdown alignRight title={<span><i className="fa fa-bars"></i></span>}>
+                            } id="basic-nav-dropdown" style={{ "marginRight": "120px" }}>
                                 <NavDropdown.Item href="/myprofile"><i className="fa fa-fw fa-user"></i>Profile</NavDropdown.Item>
                                 <NavDropdown.Item href="/logout"><i className="fa fa-fw fa-power-off"></i>Log out</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
