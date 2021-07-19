@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import personalInfo from '../../../config';
 
 export default class JoinUs extends Component {
     render() {
@@ -15,7 +16,7 @@ export default class JoinUs extends Component {
                                 <h2 style={{"textAlign": "left", "marginTop":"50px"}}>JOIN OUR ONLINE CLASSES NOW!</h2>
                                 <p style={{ "color": "grey", "textAlign": "left", "marginTop": "50px", "fontSize":"20px" }}>Fill out an application to get the process started today!</p>
                                 <div style={{"textAlign": "left", "marginTop": "50px"}}>
-                                    <a href="https://forms.gle/E6uE5N85jYwFGt5EA" type="button" className="ApplyNow">Apply Now</a>
+                                    <button onClick={() => { window.open(personalInfo.urlForm, '_blank').focus() }} type="button" className="ApplyNow">Apply Now</button>
                                 </div>
                             </div>
                         </div>
