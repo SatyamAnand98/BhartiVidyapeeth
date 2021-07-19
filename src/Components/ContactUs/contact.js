@@ -14,7 +14,7 @@ export default class ContactUs extends Component {
                 }}>JOIN A COMMUNITY OF LIFELONG LEARNERS!</div>
                 <p className="leftCenter">STAY CURIOUS</p>
 
-                <h3>Contact Us</h3>
+                <h3 className="topicHeading">Contact Us</h3>
 
                 <div class="container">
                     <div class="row">
@@ -34,12 +34,16 @@ export default class ContactUs extends Component {
                     <br></br>
                     <div class="row">
                         <div class="col-sm">
-                            <h3>Follow us on Facebook</h3>
-                            <div class="fb-page" data-href="https://www.facebook.com/BhartiVidyapeethBVP/" data-tabs="timeline" style={{"data-width":"70%", "data-height":"auto", "data-small-header":"false", "data-adapt-container-width":"true", "data-hide-cover":"false", "data-show-facepile":"true"}}>
+                            <h3 className="topicHeading">Follow us on Facebook</h3>
+                            <div class="fb-page" data-href="https://www.facebook.com/BhartiVidyapeethBVP/" data-tabs="timeline" style={{"data-width":"", "data-height":"auto", "data-small-header":"false", "data-adapt-container-width":"true", "data-hide-cover":"false", "data-show-facepile":"true"}}>
                                 <blockquote cite="https://www.facebook.com/BhartiVidyapeethBVP/" class="fb-xfbml-parse-ignore">
                                     <a href="https://www.facebook.com/BhartiVidyapeethBVP/">Bharti Vidyapeeth</a>
                                 </blockquote>
                             </div>
+                        </div>
+                        <div class="col-sm">
+                            <h3 className="topicHeading">Come visit us</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14521.918944358225!2d86.692112!3d24.503477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfef3fe9d6d2d453a!2sBharti%20Vidyapeeth!5e0!3m2!1sen!2sin!4v1626678149707!5m2!1sen!2sin" style={{ "width": "600px", "height": "500px", "border": "0", "allowfullscreen": "", "loading": "lazy" }}></iframe>
                         </div>
                     </div>
                 </div>
