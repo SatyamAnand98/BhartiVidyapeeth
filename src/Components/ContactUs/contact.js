@@ -21,14 +21,16 @@ export default class ContactUs extends Component {
                         <div class="col-sm">
                             <a href={"tel:" + personalInfo.callingNumber} type="button" className="contactNo"><i className="fa fa-fw fa-phone"></i>Call Us</a>
                             <br></br>
+                            <br></br>
                         </div>
                         <div class="col-sm">
                             <button type="button" class="contactNo" onClick={() => { window.open(urlLanguageSpecific, '_blank').focus() }}><i className="fa fa-fw fa-whatsapp"></i>WhatsApp us</button>
                             <br></br>
+                            <br></br>
                         </div>
                         <div class="col-sm">
                             <button type="button" class="contactNo" onClick={() => { window.open(urlMail, '_blank').focus() }}><i className="fa fa-fw fa-envelope"></i>Email Us</button>
-                            <br></br>
+                            <br></br><br></br>
                         </div>
                     </div>
                     <br></br>
