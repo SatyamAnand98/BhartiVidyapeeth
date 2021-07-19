@@ -5,6 +5,7 @@ import Footer from './Footer';
 import HomeIndex from './Home';
 import JoinUs from './Home/JoinUs/JoinUs';
 import AboutUs from './Home/AboutUs/AboutUs';
+import ContactUs from './ContactUs/contact';
 
 function Routing() {
     return(
@@ -18,6 +19,7 @@ function Routing() {
                         <Route path="/home" component={HomeIndex} />
                         <Route path="/about" component={AboutUs} />
                         <Route path="/join" component={JoinUs} />
+                        <Route path="/contact" component={ContactUs} />
                         <Route path="/" exact={true} component={HomeIndex} />
                         <Route path="*" exact={true} component={PageNotFound} />
                     </Switch>

@@ -71,14 +71,14 @@
 
 .leftCenter2{
   position: relative;
-  margin-right: 65%;
-  text-align: left;
+  /* margin-right: 65%; */
+  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 5px;
   font-size:20px;
   word-wrap: break-word;
-  transform: translate(40%, -800%);
-  margin-top: -10%;
+  /* transform: translate(40%, -800%); */
+  /* margin-top: -10%; */
   /* margin-bottom:20px; */
   background-color:black;
   color: white;
@@ -86,14 +86,14 @@
 
 .leftCenter{
   position: relative;
-  margin-right: 55%;
+  /* margin-right: 55%; */
   /* margin-top: 4px; */
-  text-align: left;
+  text-align: center;
   font-family: "Times New Roman";
   letter-spacing: 6px;
   padding: 3px 4px;
   font-size:60px;
-  transform: translate(31%, -370%);
+  /* transform: translate(31%, -370%); */
   background-color:white;
   color: black;
 }
@@ -115,9 +115,9 @@
 
 .contactNo:hover, .contactNo{
   position: relative;
-  margin-right: 43%;
+  /* margin-right: 43%; */
   /* margin-top: 10px; */
-  transform: translate(-115%, -650%);
+  /* transform: translate(-115%, -650%); */
   padding: 10px 35px;
   font-size: 20px;
   font-family: sans-serif;
