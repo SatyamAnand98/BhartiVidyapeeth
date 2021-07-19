@@ -19,13 +19,27 @@ export default class ContactUs extends Component {
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
-                            <a href={"tel:"+personalInfo.callingNumber} type="button" className="contactNo">Call Us</a>
+                            <a href={"tel:" + personalInfo.callingNumber} type="button" className="contactNo"><i className="fa fa-fw fa-phone"></i>Call Us</a>
+                            <br></br>
                         </div>
                         <div class="col-sm">
-                            <button type="button" class="contactNo" onClick={() => { window.open(urlLanguageSpecific, '_blank').focus() }}>WhatsApp us</button>
+                            <button type="button" class="contactNo" onClick={() => { window.open(urlLanguageSpecific, '_blank').focus() }}><i className="fa fa-fw fa-whatsapp"></i>WhatsApp us</button>
+                            <br></br>
                         </div>
                         <div class="col-sm">
-                            <button type="button" class="contactNo" onClick={() => { window.open(urlMail, '_blank').focus() }}>Email Us</button>
+                            <button type="button" class="contactNo" onClick={() => { window.open(urlMail, '_blank').focus() }}><i className="fa fa-fw fa-envelope"></i>Email Us</button>
+                            <br></br>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="row">
+                        <div class="col-sm">
+                            <h3>Follow us on Facebook</h3>
+                            <div class="fb-page" data-href="https://www.facebook.com/BhartiVidyapeethBVP/" data-tabs="timeline" style={{"data-width":"70%", "data-height":"auto", "data-small-header":"false", "data-adapt-container-width":"true", "data-hide-cover":"false", "data-show-facepile":"true"}}>
+                                <blockquote cite="https://www.facebook.com/BhartiVidyapeethBVP/" class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/BhartiVidyapeethBVP/">Bharti Vidyapeeth</a>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
