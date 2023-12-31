@@ -1,18 +1,19 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import PageNotFound from './pageNotFound/pageNotFound';
-import Header from './Header';
-import Footer from './Footer';
-import HomeIndex from './Home';
-import JoinUs from './Home/JoinUs/JoinUs';
-import AboutUs from './Home/AboutUs/AboutUs';
-import ContactUs from './ContactUs/contact';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PageNotFound from "./pageNotFound/pageNotFound";
+import Header from "./Header";
+import Footer from "./Footer";
+import HomeIndex from "./Home";
+import JoinUs from "./Home/JoinUs/JoinUs";
+import AboutUs from "./Home/AboutUs/AboutUs";
+import ContactUs from "./ContactUs/contact";
+import "../App.css";
 
 function Routing() {
-    return(
+    return (
         <div className="App">
             <Header />
             <Router>
-                <div>
+                <div className="content">
                     <br></br>
                     <Switch>
                         <Route path="/login" component={PageNotFound} />
@@ -28,7 +29,7 @@ function Routing() {
             </Router>
             <Footer />
         </div>
-    )    
+    );
 }
 
 export default Routing;

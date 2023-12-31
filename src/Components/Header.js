@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import "../App.css";
 
 export default class Header extends Component {
     render() {
@@ -54,7 +55,7 @@ export default class Header extends Component {
                             <NavDropdown
                                 title={
                                     <img
-                                        src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+                                        src="https://mdbootstrap.com/img/new/avatars/6.jpg"
                                         className="rounded-circle"
                                         height="25"
                                         alt=""
@@ -67,16 +68,10 @@ export default class Header extends Component {
                                 <NavDropdown.Item href="/myprofile">
                                     <i className="fa fa-fw fa-user"></i>Profile
                                 </NavDropdown.Item>
+                                <NavDropdown.Divider />
                                 <NavDropdown.Item href="/logout">
                                     <i className="fa fa-fw fa-power-off"></i>Log
                                     out
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">
-                                    Something
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">
-                                    Separated link
                                 </NavDropdown.Item>
                             </NavDropdown>
                             {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" />

@@ -1,5 +1,14 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -38,8 +47,9 @@
 }
 
 .header{
-  margin:0 auto;
+  margin:0 60px;
   padding: 0px 10px;
+  width: 100%;
 }
 
 #basic-nav-dropdown{
@@ -65,8 +75,14 @@
 }
 
 .footer{
-  position: relative;
+  padding: 20px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   background-color:rgb(224, 224, 224);
+  margin-bottom: 0px;
+  flex-shrink: 0;
 }
 
 .leftCenter2{
@@ -111,7 +127,9 @@
   box-shadow: 0 5px #999;
 }
 
-
+.content {
+  flex: 1 0 auto;
+}
 
 .contactNo:hover, .contactNo{
   position: relative;
@@ -193,4 +211,13 @@
   margin: 40px 0px;
   margin-left:80px;
   margin-right:80px;
+}
+
+.Navbar {
+  width: 100%;
+}
+
+.Nav {
+  width: auto;
+  margin-right: auto;
 }
