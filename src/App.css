@@ -46,12 +46,6 @@ body {
   }
 }
 
-.header{
-  margin:0 60px;
-  padding: 0px 10px;
-  width: 100%;
-}
-
 #basic-nav-dropdown{
   position: relative;
   color: rgb(102, 101, 101);

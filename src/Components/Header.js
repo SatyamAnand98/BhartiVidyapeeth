@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import { Form, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
+import styled from "styled-components";
 import "../App.css";
+import { icons } from "../store/icons.js";
 
 export default class Header extends Component {
     render() {
         return (
             <>
-                <div className="header">
-                    <Navbar bg="light" expand="lg">
+                <HeaderStyled>
+                    <Navbar bg="light" expand="lg" className="header">
                         <a className="navbar-brand mt-2 mt-lg-0" href="home">
                             <img
                                 src="logo.jpg"
@@ -16,70 +18,58 @@ export default class Header extends Component {
                                 loading="lazy"
                             />
                         </a>
-                        <Navbar.Brand href="/home">
+                        <Navbar.Brand className="brand" href="/home">
                             <b>Bharti Vidyapeeth</b>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="mr-auto">
+                            <Nav className="ml-auto">
                                 <Nav.Link href="/home">
-                                    <i className="fa fa-fw fa-home"></i>Home
+                                    {icons.home}Home
                                 </Nav.Link>
                                 <Nav.Link href="/contact">
-                                    <i className="fa fa-fw fa-envelope"></i>
+                                    {icons.contact}
                                     Contact
                                 </Nav.Link>
-                                <Nav.Link href="/about">About</Nav.Link>
-                                <Nav.Link href="/join">Join</Nav.Link>
-                                {/* <NavDropdown title="Dropdown" className="highlight" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                    <NavDropdown.Divider />
-                                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                                </NavDropdown> */}
+                                <Nav.Link href="/about">
+                                    {icons.about}About
+                                </Nav.Link>
+                                <Nav.Link href="/join">
+                                    {icons.join}Join
+                                </Nav.Link>
+                                <Nav.Link href="/gallery">
+                                    {icons.gallery}Gallery
+                                </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
-
-                        <Form className="d-flex">
-                            {/* <NavDropdown style={{ color: "grey" }} title={
-                                <i style={{ color: "grey" }} className="fa fa-bell"><span className="badge rounded-pill badge-notification bg-danger">1</span></i>
-                            } id="basic-nav-dropdown" className="highlight">
-                                <NavDropdown.Item href="#action/3.1">Notification 1</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Notification 2</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Notification 3</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Notification 4</NavDropdown.Item>
-                            </NavDropdown> */}
-
-                            <NavDropdown
-                                title={
-                                    <img
-                                        src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-                                        className="rounded-circle"
-                                        height="25"
-                                        alt=""
-                                        loading="lazy"
-                                    />
-                                }
-                                id="basic-nav-dropdown"
-                                style={{ marginRight: "120px" }}
-                            >
-                                <NavDropdown.Item href="/myprofile">
-                                    <i className="fa fa-fw fa-user"></i>Profile
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="/logout">
-                                    <i className="fa fa-fw fa-power-off"></i>Log
-                                    out
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                            {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                            <Button variant="outline-success"><i className="fa fa-fw fa-search"></i> </Button> */}
-                        </Form>
                     </Navbar>
-                </div>
+                </HeaderStyled>
             </>
         );
     }
 }
+
+const HeaderStyled = styled.div`
+    .header {
+        // display: flex;
+        // align-items: center;
+
+        .navbar-brand {
+            img {
+                margin-left: 30px;
+            }
+        }
+
+        // .brand {
+        //     position: absolute;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        // }
+
+        @media (min-width: 768px) {
+            .navbar-collapse {
+                justify-content: flex-end;
+            }
+        }
+    }
+`;

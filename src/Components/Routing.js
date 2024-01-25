@@ -16,7 +16,6 @@ function Routing() {
                 <div className="content">
                     <br></br>
                     <Switch>
-                        <Route path="/login" component={PageNotFound} />
                         <Route path="/home" component={HomeIndex} />
                         <Route path="/about" component={AboutUs} />
                         <Route path="/join" component={JoinUs} />
