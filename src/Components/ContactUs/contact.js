@@ -121,9 +121,6 @@ export default class ContactUs extends Component {
                                     "data-adapt-container-width": "true",
                                     "data-hide-cover": "false",
                                     "data-show-facepile": "true",
-                                    // width: "600px",
-                                    // height: "500px",
-                                    // border: "0",
                                     allowfullscreen: "",
                                     loading: "lazy",
                                 }}
