@@ -115,9 +115,15 @@ export default class ContactUs extends Component {
                                 title="Bharti Vidyapeeth Location"
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14521.918944358225!2d86.692112!3d24.503477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfef3fe9d6d2d453a!2sBharti%20Vidyapeeth!5e0!3m2!1sen!2sin!4v1626678149707!5m2!1sen!2sin"
                                 style={{
-                                    width: "600px",
-                                    height: "500px",
-                                    border: "0",
+                                    "data-width": "",
+                                    "data-height": "auto",
+                                    "data-small-header": "false",
+                                    "data-adapt-container-width": "true",
+                                    "data-hide-cover": "false",
+                                    "data-show-facepile": "true",
+                                    // width: "600px",
+                                    // height: "500px",
+                                    // border: "0",
                                     allowfullscreen: "",
                                     loading: "lazy",
                                 }}

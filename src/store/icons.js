@@ -16,4 +16,5 @@ export const icons = {
     call: <i className="fa fa-fw fa-phone"></i>,
     documents: <i className="fa fa-fw fa-file"></i>,
     gallery: <i className="fa fa-fw fa-image"></i>,
+    achievements: <i className="fa fa-fw fa-trophy"></i>,
 };
