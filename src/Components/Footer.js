@@ -8,7 +8,19 @@ export default function Footer() {
                 <p>
                     {`Copyright © ${new Date().getFullYear()} Bharti Vidyapeeth - All Rights Reserved.`}
                 </p>
-                <p>Powered by Satyam Anand</p>
+                <p>
+                    Powered by{" "}
+                    <a
+                        href="https://satyamanand.in"
+                        target="_blank"
+                        style={{
+                            color: "black",
+                            textDecoration: "underline",
+                        }}
+                    >
+                        Satyam Anand
+                    </a>
+                </p>
             </div>
         </footer>
     );
