@@ -168,11 +168,11 @@ const itemData = [
     {
         img: "https://lh3.ggpht.com/p/AF1QipP2TkwgMMYFOKZNfek8KBx4CQOgEadCVNvc5HXi=s1536",
     },
-    {
-        img: "https://lh3.ggpht.com/p/AF1QipMtbbZoayM6A8a8VTf4YUeVWRErFEJKIbQBrCm2=s1536",
-        title: "Unnamed",
-        author: "@Bharti Vidyapeeth",
-    },
+    // {
+    //     img: "https://lh3.ggpht.com/p/AF1QipMtbbZoayM6A8a8VTf4YUeVWRErFEJKIbQBrCm2=s1536",
+    //     title: "Unnamed",
+    //     author: "@Bharti Vidyapeeth",
+    // },
 ];
 
 const videoData = [];

@@ -347,12 +347,12 @@ const itemData = [
         author: "@Bharti Vidyapeeth",
         type: "image",
     },
-    {
-        url: "https://lh3.ggpht.com/p/AF1QipMtbbZoayM6A8a8VTf4YUeVWRErFEJKIbQBrCm2=s1536",
-        title: "Unnamed",
-        author: "@Bharti Vidyapeeth",
-        type: "image",
-    },
+    // {
+    //     url: "https://lh3.ggpht.com/p/AF1QipMtbbZoayM6A8a8VTf4YUeVWRErFEJKIbQBrCm2=s1536",
+    //     title: "Unnamed",
+    //     author: "@Bharti Vidyapeeth",
+    //     type: "image",
+    // },
     {
         url: "https://lh3.ggpht.com/p/AF1QipNkF4eWq9UidYcqpcbaQcSV_D8h3ob4ybgdKyRO=s4096",
         title: "unnamed",
