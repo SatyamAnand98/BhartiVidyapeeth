@@ -1,90 +1,140 @@
+import { useState } from "react";
 import {
     ImageList,
     ImageListItem,
-    ImageListItemBar,
-    ListSubheader,
+    Dialog,
+    DialogContent,
     IconButton,
+    Button,
 } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import ZoomInIcon from "@mui/icons-material/ZoomIn";
+import CloseIcon from "@mui/icons-material/Close";
+import GetAppIcon from "@mui/icons-material/GetApp";
 
 export default function Gallery() {
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const openImageDialog = (img) => {
+        setSelectedImage(img);
+    };
+
+    const closeImageDialog = () => {
+        setSelectedImage(null);
+    };
+
+    const downloadImage = () => {
+        if (selectedImage) {
+            const link = document.createElement("a");
+            link.href = selectedImage;
+            link.target = "_blank";
+            link.download = "image.jpg";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    };
+
     return (
-        <ImageList
-            sx={{
-                width: isSmallScreen ? "100vw" : "70vw",
-                height: "100vh",
-                marginLeft: isSmallScreen ? "0" : "15vw",
-                marginRight: isSmallScreen ? "0" : "15vw",
-            }}
-        >
-            {itemData.map((item) => (
-                <ImageListItem key={item.img}>
+        <>
+            <ImageList
+                sx={{
+                    width: isSmallScreen ? "100vw" : "70vw",
+                    height: "100vh",
+                    marginLeft: isSmallScreen ? "0" : "15vw",
+                    marginRight: isSmallScreen ? "0" : "15vw",
+                    borderRight: "2px solid black",
+                    borderLeft: "2px solid black",
+                }}
+                transform="translateZ(0)"
+            >
+                {itemData.map((item) => (
+                    <ImageListItem key={item.img}>
+                        <img
+                            srcSet={`${item.img}`}
+                            src={`${item.img}`}
+                            alt={item.title}
+                            loading="lazy"
+                            style={{
+                                objectFit: "contain",
+                                width: "100%",
+                                height: "100%",
+                            }}
+                            onClick={() => openImageDialog(item.img)}
+                        />
+                    </ImageListItem>
+                ))}
+                {videoData.map((item) => (
+                    <ImageListItem
+                        key={item.vid}
+                        cols={item.cols}
+                        rows={item.rows}
+                        style={{ width: "100%", height: "100%" }}
+                    >
+                        <video
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            src={item.vid}
+                            alt={item.title}
+                            loading="lazy"
+                            style={{
+                                objectFit: "contain",
+                                width: "100%",
+                                height: "100%",
+                            }}
+                        />
+                    </ImageListItem>
+                ))}
+            </ImageList>
+
+            <Dialog
+                open={!!selectedImage}
+                onClose={closeImageDialog}
+                maxWidth="lg" // Set the maxWidth property to 'lg' for a larger width
+            >
+                <DialogContent sx={{ padding: 0 }}>
                     <img
-                        srcSet={`${item.img}`}
-                        src={`${item.img}`}
-                        alt={item.title}
-                        loading="lazy"
+                        src={selectedImage}
+                        alt="Enlarged"
                         style={{
-                            objectFit: "contain", // Adjusted to use cover instead of scale-down
                             width: "100%",
                             height: "100%",
+                            objectFit: "contain",
                         }}
                     />
-                    {/* <ImageListItemBar
-                        title={item.title}
-                        subtitle={item.author}
-                        actionIcon={
-                            <IconButton
-                                sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-                                aria-label={`info about ${item.title}`}
-                            >
-                                <InfoIcon />
-                            </IconButton>
-                        }
-                    /> */}
-                </ImageListItem>
-            ))}
-            {videoData.map((item) => (
-                <ImageListItem
-                    key={item.vid}
-                    cols={item.cols}
-                    rows={item.rows}
-                    style={{ width: "100%", height: "100%" }}
-                >
-                    <video
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        src={item.vid}
-                        alt={item.title}
-                        loading="lazy"
-                        style={{
-                            objectFit: "contain", // Adjusted to use cover instead of scale-down
-                            width: "100%",
-                            height: "100%",
+                    <IconButton
+                        sx={{
+                            position: "absolute",
+                            top: 0,
+                            right: 0,
+                            color: "white",
                         }}
-                    />
-                    {/* <ImageListItemBar
-                        title={item.title}
-                        subtitle={item.author}
-                        actionIcon={
-                            <IconButton
-                                sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-                                aria-label={`info about ${item.title}`}
-                            >
-                                <InfoIcon />
-                            </IconButton>
-                        }
-                    /> */}
-                </ImageListItem>
-            ))}
-        </ImageList>
+                        onClick={closeImageDialog}
+                    >
+                        <CloseIcon />
+                    </IconButton>
+                    <Button
+                        className="ApplyNow"
+                        variant="contained"
+                        startIcon={<GetAppIcon />}
+                        onClick={downloadImage}
+                        sx={{
+                            position: "absolute",
+                            bottom: 16,
+                            right: 16,
+                        }}
+                    >
+                        Download
+                    </Button>
+                </DialogContent>
+            </Dialog>
+        </>
     );
 }
 
