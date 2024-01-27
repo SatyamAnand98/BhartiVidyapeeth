@@ -7,6 +7,8 @@ import JoinUs from "./Home/JoinUs/JoinUs";
 import AboutUs from "./Home/AboutUs/AboutUs";
 import ContactUs from "./ContactUs/contact";
 import "../App.css";
+import Achievements from "./Images/Achievements.js";
+import Gallery from "./Images/Gallery.js";
 
 function Routing() {
     return (
@@ -20,6 +22,8 @@ function Routing() {
                         <Route path="/about" component={AboutUs} />
                         <Route path="/join" component={JoinUs} />
                         <Route path="/contact" component={ContactUs} />
+                        <Route path="/achievements" component={Achievements} />
+                        <Route path="/gallery" component={Gallery} />
                         <Route path="/" exact={true} component={HomeIndex} />
                         <Route path="*" exact={true} component={PageNotFound} />
                     </Switch>

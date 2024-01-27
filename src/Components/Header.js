@@ -46,7 +46,7 @@ export default class Header extends Component {
                                 <Nav.Link href="/gallery">
                                     {icons.gallery}Gallery
                                 </Nav.Link>
-                                <Nav.Link href="/achievement">
+                                <Nav.Link href="/achievements">
                                     {icons.achievements}Achievements
                                 </Nav.Link>
                             </Nav>

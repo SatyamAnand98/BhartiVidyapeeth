@@ -13,6 +13,7 @@ export default function Footer() {
                     <a
                         href="https://satyamanand.in"
                         target="_blank"
+                        rel="noreferrer"
                         style={{
                             color: "black",
                             textDecoration: "underline",
