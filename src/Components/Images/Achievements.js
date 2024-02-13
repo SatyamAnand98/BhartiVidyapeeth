@@ -63,18 +63,6 @@ export default function Achievements() {
             .catch((error) => console.error("Error downloading image:", error));
     };
 
-    const downloadVideo = (videoUrl) => {
-        fetch(videoUrl)
-            .then((response) => response.blob())
-            .then((blob) => {
-                const link = document.createElement("a");
-                link.href = window.URL.createObjectURL(blob);
-                link.download = "bvpVideo";
-                link.click();
-            })
-            .catch((error) => console.error("Error downloading video:", error));
-    };
-
     const downloadItem = (event) => {
         event.preventDefault();
         if (selectedItem?.type === "image") {
@@ -308,11 +296,11 @@ const ImageListContainer = styled.div`
     }
     @media (max-width: 768px) {
         padding: 1rem;
-        width: 400px;
+        width: 100%;
     }
     @media (max-width: 500px) {
         padding: 1rem;
-        width: 300px;
+        width: 100%;
     }
 `;
 
@@ -335,6 +323,22 @@ const GalleryCard = styled.div`
     &:hover {
         transform: scale(1.15);
         z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.5rem;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+
+    @media (max-width: 500px) {
+        padding: 0.5rem;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
     }
 
     img,
