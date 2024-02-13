@@ -35,7 +35,7 @@ export default function Gallery() {
             setPlaying(false);
             setSelectedItem(null);
         }
-    }, [inView]);
+    }, [inView, selectedItem, videoRef]);
 
     const openDialog = (item) => {
         setSelectedItem(item);
